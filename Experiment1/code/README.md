@@ -19,7 +19,9 @@ npm run dev
  * * 通过fs模块导出数据
  */
 ```
-第一步爬取下来liveUlr数据结构为:
+
+(1) 第一步使用cheerio爬取下来liveUlr数据结构为:
+
 ``` js
 {
     2023-09-18: {
@@ -37,7 +39,17 @@ npm run dev
     }
 }
 ```
-通过对每个url添加后缀 '/直播间' 即 '%E8%81%8A%E5%A4%A9%E5%AE%A4'
+
+(2) 第二步通过对每个url添加后缀 '/直播间' 即 '%E8%81%8A%E5%A4%A9%E5%AE%A4' 和前缀 'https:' 得到亚运会直播间url
+
+(3) 第三步使用puppeteer爬取直播间的人数
+    遇到问题以及解决方案：
+        a. 使用cheerio进行爬取，但是这个库爬取的是静态界面，导致直播间人数无法爬取到
+        b. 使用puppeteer，但太慢了，使用Promise.all进行并发处理，结果导致内存占率99%程序崩溃
+        c. 对puppeteer进行优化，包括对launch部分进行优化，但依旧很慢
+        d. 使用generic-pool连接池对并发进行优化 --> 完美 相关文章：https://zhuanlan.zhihu.com/p/107800256
+
+
 
 
 

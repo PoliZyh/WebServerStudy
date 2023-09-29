@@ -62,7 +62,7 @@ async function getLivePeople (data) {
         const peopleCounts = []
         const promises = []
         for (const urlItem of data[item].url) {
-            const peopleCount = await myPuppeteer.getContentByTagClass(urlItem, tagClasses.peopleTag, data[item])
+            const peopleCount = await myPuppeteer.runPuppeteerScript(urlItem, tagClasses.peopleTag)
             peopleCounts.push(peopleCount)
         }
 
