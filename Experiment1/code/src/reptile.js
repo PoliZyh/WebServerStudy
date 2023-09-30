@@ -28,16 +28,16 @@ async function getDatePage() {
         const html = await getHTML(url)
         const hrefs = myCheerio.getHrefsByTagClass(html, tagClasses.liveHrefTag)
         const names = myCheerio.getContentByTagClass(html, tagClasses.competitionName)
+        const len = myCheerio.getContentByTagClass(html, tagClasses.totalCom)
 
         liveUrl[dayItem] = {
             url: hrefs,
             names: names,
-            len: hrefs.length,
+            len: convertToNumber.convertComToNumber(len),
         }
     }
 
     console.log('结束爬去直播间的url!')
-    
     return liveUrl
 }
 
@@ -130,7 +130,7 @@ async function reptile() {
     for (const item in data) {
         // 字符串to数值
         const numberCount = data[item].peopleCounts.map(count => {
-            return convertToNumber(count)
+            return convertToNumber.convertToNumber(count)
         })
         const mostIndexes = findMaxIndexes(numberCount)
         data[item].mostIndexes = mostIndexes

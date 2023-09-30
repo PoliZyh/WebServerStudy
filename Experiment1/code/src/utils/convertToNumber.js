@@ -14,5 +14,16 @@ function convertToNumber(countString) {
     }
 }
 
+function convertComToNumber(countString) {
+    if (countString.includes('场')) {
+        const numberPart = parseInt(countString.replace("场", ""))
+        return numberPart
+    } else {
+        return parseInt(countString)
+    }
+}
 
-module.exports = convertToNumber
+module.exports = {
+    convertToNumber,
+    convertComToNumber
+}

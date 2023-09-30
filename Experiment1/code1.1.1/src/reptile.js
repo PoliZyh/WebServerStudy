@@ -42,11 +42,12 @@ function restructData(data) {
 async function getLivePeople(data) {
 
     for (const item in data) {
-        const peoCounts = []
-        for (const urlItem of data[item].url) {
-            const peoCount = await myPuppeteer.runPuppeteerScriptForTexts(urlItem, tagClasses.peopleTag) 
-            peoCounts.push(peoCount)
-        }
+        // const peoCounts = []
+        // for (const urlItem of data[item].url) {
+        //     const peoCount = await myPuppeteer.runPuppeteerScriptForTexts(urlItem, tagClasses.peopleTag) 
+        //     peoCounts.push(peoCount)
+        // }
+        const peoCounts = await myPuppeteer.runPuppeteerScriptForTexts(data[item].url, tagClasses.peopleTag)
         data[item].peoCounts = peoCounts
     }
 

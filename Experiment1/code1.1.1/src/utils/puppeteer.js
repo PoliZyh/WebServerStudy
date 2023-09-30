@@ -31,30 +31,36 @@ async function autoScroll(page) {
  * 优化
  * 使用链接池
  */
-async function runPuppeteerScriptForTexts(url, classTag) {
-    console.log(`开始爬取${url}的Text`)
+async function runPuppeteerScriptForTexts(urls, classTag) {
+    // console.log(`开始爬取${url}的Text`)
     return new Promise(async (resolve) => {
         const browser = await browserPool.acquire(); // 从连接池获取浏览器实例
 
         const page = await browser.newPage();
         await page.setDefaultNavigationTimeout(60000);
-        await page.goto(url);
-        await page.waitForSelector(classTag);
-        
-        // 执行其他 Puppeteer 操作...
-        const dynamicContent = await page.evaluate((classTag) => {
-            const element = document.querySelector(classTag);
-            return element ? element.textContent : null;
-        }, classTag);
+
+        const dynamicContents = []
+
+        for (const urlItem in urls) {
+            console.log(`开始爬取${urls[urlItem]}的Text`)
+            await page.goto(urls[urlItem]);
+            await page.waitForSelector(classTag);
+            const dynamicContent = await page.evaluate((classTag) => {
+                const element = document.querySelector(classTag);
+                return element ? element.textContent : null;
+            }, classTag);
+            dynamicContents.push(dynamicContent)
+            console.log(`结束爬取${urls[urlItem]}的Text`)
+        }
+
         // 关闭页面
         await page.close();
-        console.log(`结束爬取${classTag}的Text`)
     
         // 将浏览器实例返回连接池
         browserPool.release(browser);
 
         resolve(
-            dynamicContent
+            dynamicContents
         )
     })
 }

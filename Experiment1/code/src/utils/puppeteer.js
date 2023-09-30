@@ -14,7 +14,10 @@ async function runPuppeteerScript(url, classTag) {
         const page = await browser.newPage();
         await page.goto(url);
         await page.waitForSelector(classTag);
-
+        // await page.waitForFunction(() => {
+        //     const els = document.querySelectorAll(classTag)
+        //     return els.length >= len
+        // })
         // 执行其他 Puppeteer 操作...
         const dynamicContent = await page.evaluate((classTag) => {
             const element = document.querySelector(classTag);
