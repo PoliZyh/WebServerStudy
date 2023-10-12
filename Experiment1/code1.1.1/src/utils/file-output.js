@@ -27,7 +27,7 @@ function outputDataToJSONBriefly(data, mkPath) {
         res.push(str)
     }
     const jsonData = JSON.stringify(res, null, 2)
-    const fileName = 'outputBriefly.json'
+    const fileName = 'result.json'
     fs.writeFile(path.join(mkPath, fileName), jsonData, (err) => {
         if (err) console.log('文件写入出错')
         else console.log('briefly文件写入成功')
