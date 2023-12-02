@@ -1,0 +1,1 @@
+awk 'NR > 7 && $9 > 0 {print $1, $9, $10, $12}' ./log/index.log

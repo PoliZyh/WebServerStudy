@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebServer E9</title>
+    <style>
+        
+    </style>
+</head>
+<body>
+    <div class="msg-box">
+        删除成功，请等待刷新
+    </div>
+    <div class="container">
+        <div class="container-item">
+            <div class="cir-left cir-item"></div>
+            <div class="cir-left-small cir-item"></div>
+            <h3>非闲置进程列表</h3>
+            <table class="tb">
+                <thead>
+                    <th>USER</th>
+                    <th>PID</th>
+                    <th>COMMAND</th>
+                    <th>OPTIONS</th>
+                </thead>
+                <tbody id="tbody1"></tbody>
+            </table>
+        </div>
+        <div class="container-item">
+            <div class="cir-left cir-item"></div>
+            <div class="cir-left-small cir-item"></div>
+            <h3>占用CPU最高的进程(前3)</h3>
+            <table class="tb">
+                <thead>
+                    <th>PID</th>
+                    <th>%CPU</th>
+                    <th>COMMAND</th>
+                </thead>
+                <tbody id="tbody2"></tbody>
+            </table>
+        </div>
+        <div class="container-item">
+            <div class="cir-left cir-item"></div>
+            <div class="cir-left-small cir-item"></div>
+            <h3>占用内存最高的进程(前3)</h3>
+            <table class="tb">
+                <thead>
+                    <th>PID</th>
+                    <th>%MEM</th>
+                    <th>COMMAND</th>
+                </thead>
+                <tbody id="tbody3"></tbody>
+            </table>
+        </div>
+    </div>
+</body>
+<script>
+        const killPid = async (pid) => {
+            newUrl = window.location.origin + window.location.pathname + '?pid=' + pid
+            history.pushState({}, '', newUrl);
+            await showMessageBox()
+        }
+        const showMessageBox = () => {
+            const messageBox = document.getElementsByClassName('msg-box')[0]
+            return new Promise((resolve) => {
+                messageBox.style.top = '3%'
+                messageBox.style.visibility = ''
+                const timer = setTimeout(() => {
+                    clearTimeout(timer)
+                    messageBox.style.visibility = 'hidden'
+                    messageBox.style.top = '-50px'
+                    resolve()
+                }, 1000)
+            })
+        }
+        setInterval(() => {
+            window.location.reload()
+        }, 5000)
+        window.onload = () => {
+            const btns = document.getElementsByClassName('btn-del')
+            Array.from(btns).forEach((btn) => {
+                const user = btn.getAttribute('data-user')
+                btn.disabled = 
+                    user === 'root' || user === 'admin' ?
+                    true : false
+            })
+        }
+</script>
+</html>
