@@ -1,17 +1,17 @@
 USER       PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
-root         1  0.0  0.1 125544  3468 ?        Ss   Oct12   6:13 /usr/lib/systemd/systemd --switched-root --system --deserialize 22
-root         2  0.0  0.0      0     0 ?        S    Oct12   0:01 [kthreadd]
+root         1  0.0  0.1 125544  3468 ?        Ss   Oct12   6:22 /usr/lib/systemd/systemd --switched-root --system --deserialize 22
+root         2  0.0  0.0      0     0 ?        S    Oct12   0:02 [kthreadd]
 root         4  0.0  0.0      0     0 ?        S<   Oct12   0:00 [kworker/0:0H]
-root         6  0.0  0.0      0     0 ?        S    Oct12   0:42 [ksoftirqd/0]
+root         6  0.0  0.0      0     0 ?        S    Oct12   0:43 [ksoftirqd/0]
 root         7  0.0  0.0      0     0 ?        S    Oct12   0:23 [migration/0]
 root         8  0.0  0.0      0     0 ?        S    Oct12   0:01 [rcu_bh]
-root         9  0.0  0.0      0     0 ?        S    Oct12  18:04 [rcu_sched]
+root         9  0.0  0.0      0     0 ?        S    Oct12  18:15 [rcu_sched]
 root        10  0.0  0.0      0     0 ?        S<   Oct12   0:00 [lru-add-drain]
 root        11  0.0  0.0      0     0 ?        S    Oct12   0:15 [watchdog/0]
 root        12  0.0  0.0      0     0 ?        S    Oct12   0:13 [watchdog/1]
 root        13  0.0  0.0      0     0 ?        S    Oct12   0:23 [migration/1]
-root        14  0.0  0.0      0     0 ?        R    Oct12   0:38 [ksoftirqd/1]
-root        16  0.0  0.0      0     0 ?        S<   Oct12   0:29 [kworker/1:0H]
+root        14  0.0  0.0      0     0 ?        S    Oct12   0:39 [ksoftirqd/1]
+root        16  0.0  0.0      0     0 ?        S<   Oct12   0:30 [kworker/1:0H]
 root        18  0.0  0.0      0     0 ?        S    Oct12   0:00 [kdevtmpfs]
 root        19  0.0  0.0      0     0 ?        S<   Oct12   0:00 [netns]
 root        20  0.0  0.0      0     0 ?        S    Oct12   0:01 [khungtaskd]
@@ -26,7 +26,7 @@ root        28  0.0  0.0      0     0 ?        S<   Oct12   0:00 [edac-poller]
 root        29  0.0  0.0      0     0 ?        S<   Oct12   0:00 [watchdogd]
 root        36  0.0  0.0      0     0 ?        S    Oct12   0:03 [kswapd0]
 root        37  0.0  0.0      0     0 ?        SN   Oct12   0:00 [ksmd]
-root        38  0.0  0.0      0     0 ?        SN   Oct12   0:07 [khugepaged]
+root        38  0.0  0.0      0     0 ?        SN   Oct12   0:08 [khugepaged]
 root        39  0.0  0.0      0     0 ?        S<   Oct12   0:00 [crypto]
 root        47  0.0  0.0      0     0 ?        S<   Oct12   0:00 [kthrotld]
 root        49  0.0  0.0      0     0 ?        S<   Oct12   0:00 [kmpath_rdacd]
@@ -34,7 +34,7 @@ root        50  0.0  0.0      0     0 ?        S<   Oct12   0:00 [kaluad]
 root        51  0.0  0.0      0     0 ?        S<   Oct12   0:00 [kpsmoused]
 root        52  0.0  0.0      0     0 ?        S<   Oct12   0:00 [ipv6_addrconf]
 root        65  0.0  0.0      0     0 ?        S<   Oct12   0:00 [deferwq]
-root       105  0.0  0.0      0     0 ?        S    Oct12   1:09 [kauditd]
+root       105  0.0  0.0      0     0 ?        S    Oct12   1:10 [kauditd]
 root       207  0.0  0.0      0     0 ?        S<   Oct12   0:00 [iscsi_eh]
 root       255  0.0  0.0      0     0 ?        S<   Oct12   0:00 [ata_sff]
 root       264  0.0  0.0      0     0 ?        S    Oct12   0:00 [scsi_eh_0]
@@ -43,62 +43,62 @@ root       266  0.0  0.0      0     0 ?        S<   Oct12   0:00 [kworker/1:1H]
 root       267  0.0  0.0      0     0 ?        S    Oct12   0:00 [scsi_eh_1]
 root       268  0.0  0.0      0     0 ?        S<   Oct12   0:00 [scsi_tmf_1]
 root       270  0.0  0.0      0     0 ?        S<   Oct12   0:00 [ttm_swap]
-root       287  0.0  0.0      0     0 ?        S<   Oct12   3:35 [kworker/0:1H]
-root       292  0.0  0.0      0     0 ?        S    Oct12  10:41 [jbd2/vda1-8]
+root       287  0.0  0.0      0     0 ?        S<   Oct12   3:37 [kworker/0:1H]
+root       292  0.0  0.0      0     0 ?        S    Oct12  10:48 [jbd2/vda1-8]
 root       293  0.0  0.0      0     0 ?        S<   Oct12   0:00 [ext4-rsv-conver]
-root       387  0.0  1.8 137416 38452 ?        Ss   Oct12  13:25 /usr/lib/systemd/systemd-journald
+root       387  0.0  4.4 170184 91920 ?        Ss   Oct12  13:33 /usr/lib/systemd/systemd-journald
 root       409  0.0  0.0 116644   756 ?        Ss   Oct12   0:00 /usr/sbin/lvmetad -f
 root       416  0.0  0.0  45400  1372 ?        Ss   Oct12   0:00 /usr/lib/systemd/systemd-udevd
-root       604  0.0  0.0  55532   728 ?        S<sl Oct12   3:04 /sbin/auditd
+root       604  0.0  0.0  55532   740 ?        S<sl Oct12   3:06 /sbin/auditd
 libstor+   678  0.0  0.0   8580   676 ?        Ss   Oct12   0:11 /usr/bin/lsmd -d
-root       680  0.0  0.0  26780  1956 ?        Ss   Oct12   2:23 /usr/lib/systemd/systemd-logind
-dbus       683  0.0  0.1  60308  2076 ?        Ss   Oct12   5:24 /usr/bin/dbus-daemon --system --address=systemd: --nofork --nopidfile --systemd-activation
+root       680  0.0  0.0  26780  1956 ?        Ss   Oct12   2:24 /usr/lib/systemd/systemd-logind
+dbus       683  0.0  0.1  60308  2076 ?        Ss   Oct12   5:27 /usr/bin/dbus-daemon --system --address=systemd: --nofork --nopidfile --systemd-activation
 root       686  0.0  0.0   4388   384 ?        Ss   Oct12   0:00 /usr/sbin/acpid
-polkitd    688  0.0  0.2 614448  4932 ?        Ssl  Oct12   1:46 /usr/lib/polkit-1/polkitd --no-debug
+polkitd    688  0.0  0.2 614448  4932 ?        Ssl  Oct12   1:47 /usr/lib/polkit-1/polkitd --no-debug
 root      1026  0.0  0.0 103004   124 ?        Ss   Oct12   0:00 /sbin/dhclient -q -lf /var/lib/dhclient/dhclient--eth0.lease -pf /var/run/dhclient-eth0.pid -H VM-4-5-centos eth0
 root      1090  0.0  0.4  61488 10144 ?        S<Ls Oct12   0:00 /sbin/iscsid -f
-root      1091  0.0  0.1 574292  3876 ?        Ssl  Oct12   6:30 /usr/bin/python2 -Es /usr/sbin/tuned -l -P
-root      1263  0.0  1.2 737060 25520 ?        Ssl  Oct12   8:04 /usr/sbin/rsyslogd -n
-root      1277  0.0  0.0 126388  1044 ?        Ss   Oct12   0:28 /usr/sbin/crond -n
+root      1091  0.0  0.1 574292  3876 ?        Ssl  Oct12   6:34 /usr/bin/python2 -Es /usr/sbin/tuned -l -P
+root      1263  0.0  2.3 737060 47428 ?        Ssl  Oct12   8:09 /usr/sbin/rsyslogd -n
+root      1277  0.0  0.0 126388  1052 ?        Ss   Oct12   0:29 /usr/sbin/crond -n
 root      1279  0.0  0.0  25908   760 ?        Ss   Oct12   0:00 /usr/sbin/atd -f
 root      1482  0.0  0.0 110208   784 ttyS0    Ss+  Oct12   0:00 /sbin/agetty --keep-baud 115200,38400,9600 ttyS0 vt220
 root      1483  0.0  0.0 110208   808 tty1     Ss+  Oct12   0:00 /sbin/agetty --noclear tty1 linux
 ntp       1589  0.0  0.0  32044  1588 ?        Ss   Oct12   0:11 /usr/sbin/ntpd -u ntp:ntp -g
-root      1652  0.0  0.3 365904  6192 ?        Sl   Oct12   0:26 /www/server/panel/pyenv/bin/python3 /www/server/panel/BT-Panel
-root      1923  0.0  1.9 1340900 40704 ?       Sl   Oct12  47:46 /www/server/panel/pyenv/bin/python3 /www/server/panel/BT-Task
-root      2291  0.0  0.5 1054112 11532 ?       Sl   Oct12  19:15 /usr/local/qcloud/YunJing/YDLive/YDLive
+root      1652  0.0  0.3 365904  6192 ?        Sl   Oct12   0:27 /www/server/panel/pyenv/bin/python3 /www/server/panel/BT-Panel
+root      1923  0.0  1.9 1340900 40712 ?       Sl   Oct12  48:16 /www/server/panel/pyenv/bin/python3 /www/server/panel/BT-Task
+root      2291  0.0  0.5 1054112 11512 ?       Sl   Oct12  19:27 /usr/local/qcloud/YunJing/YDLive/YDLive
 root      2385  0.0  0.3 155684  7536 ?        S    Oct12   0:59 barad_agent
-root      2392  0.0  0.4 165204  9456 ?        S    Oct12  57:50 barad_agent
-root      2394  0.6  0.8 756280 16432 ?        Sl   Oct12 514:32 barad_agent
-root      3995  0.0  0.2 113004  4340 ?        Ss   Dec01   0:04 /usr/sbin/sshd -D
-root      4015  0.0  0.0      0     0 ?        S    01:05   0:00 [kworker/1:0]
-zhangyi+  6350  0.0  0.1 182724  2076 pts/4    Sl+  01:09   0:00 ./httpd 8080
-zhangyi+  7392  0.0  0.0 113284  1368 pts/4    S+   01:09   0:00 bash main.sh
-zhangyi+  7395  0.0  0.0 155452  1876 pts/4    R+   01:09   0:00 ps aux
+root      2392  0.0  0.4 165204  9460 ?        S    Oct12  58:26 barad_agent
+root      2394  0.6  0.8 756280 16432 ?        Sl   Oct12 519:57 barad_agent
+root      3558  0.0  0.0  97404  1864 ?        Sl   08:17   0:00 /usr/local/qcloud/stargate/bin/sgagent -d
+root      3995  0.0  0.2 113004  4340 ?        Ss   Dec01   0:06 /usr/sbin/sshd -D
+root      5384  0.0  0.0      0     0 ?        S    13:45   0:00 [kworker/0:2]
+root      7007  0.0  0.2 156880  5520 ?        Ss   13:50   0:00 sshd: zhangyihang [priv]
+zhangyi+  7027  0.1  0.1 157536  3132 ?        S    13:50   0:00 sshd: zhangyihang@notty
+zhangyi+  7028  0.0  0.0 115416  1684 ?        Ss   13:50   0:00 -bash
+zhangyi+  7045  0.0  0.0 113552  2012 ?        S    13:50   0:00 bash
+zhangyi+  7087  0.0  0.0 113284  1408 ?        S    13:50   0:00 sh /home/zhangyihang/.vscode-server/bin/1a5daa3a0231a0fbba4f14db7ec463cf99d7768e/bin/code-server --start-server --host=127.0.0.1 --accept-server-license-terms --enable-remote-auto-shutdown --port=0 --telemetry-level all --connection-token-file /home/zhangyihang/.vscode-server/.1a5daa3a0231a0fbba4f14db7ec463cf99d7768e.token
+zhangyi+  7099  0.8  3.3 951208 68232 ?        Sl   13:50   0:05 /home/zhangyihang/.vscode-server/bin/1a5daa3a0231a0fbba4f14db7ec463cf99d7768e/node /home/zhangyihang/.vscode-server/bin/1a5daa3a0231a0fbba4f14db7ec463cf99d7768e/out/server-main.js --start-server --host=127.0.0.1 --accept-server-license-terms --enable-remote-auto-shutdown --port=0 --telemetry-level all --connection-token-file /home/zhangyihang/.vscode-server/.1a5daa3a0231a0fbba4f14db7ec463cf99d7768e.token
+zhangyi+  7163  0.7  3.9 974232 79976 ?        Sl   13:50   0:04 /home/zhangyihang/.vscode-server/bin/1a5daa3a0231a0fbba4f14db7ec463cf99d7768e/node --dns-result-order=ipv4first /home/zhangyihang/.vscode-server/bin/1a5daa3a0231a0fbba4f14db7ec463cf99d7768e/out/bootstrap-fork --type=extensionHost --transformURIs --useHostProxy=false
+zhangyi+  7175  0.4  1.8 860340 36944 ?        Sl   13:50   0:02 /home/zhangyihang/.vscode-server/bin/1a5daa3a0231a0fbba4f14db7ec463cf99d7768e/node /home/zhangyihang/.vscode-server/bin/1a5daa3a0231a0fbba4f14db7ec463cf99d7768e/out/bootstrap-fork --type=fileWatcher
+zhangyi+  7190  0.3  2.1 721100 42996 ?        Sl   13:50   0:02 /home/zhangyihang/.vscode-server/bin/1a5daa3a0231a0fbba4f14db7ec463cf99d7768e/node /home/zhangyihang/.vscode-server/bin/1a5daa3a0231a0fbba4f14db7ec463cf99d7768e/out/bootstrap-fork --type=ptyHost --logsPath /home/zhangyihang/.vscode-server/data/logs/20231203T135018
+zhangyi+  7255  0.0  0.1 116964  3652 pts/4    Ss   13:50   0:00 /bin/bash --init-file /home/zhangyihang/.vscode-server/bin/1a5daa3a0231a0fbba4f14db7ec463cf99d7768e/out/vs/workbench/contrib/terminal/browser/media/shellIntegration-bash.sh
+zhangyi+  7466  0.0  0.1 116964  3624 pts/0    Ss+  13:50   0:00 /bin/bash --init-file /home/zhangyihang/.vscode-server/bin/1a5daa3a0231a0fbba4f14db7ec463cf99d7768e/out/vs/workbench/contrib/terminal/browser/media/shellIntegration-bash.sh
 zhangyi+  7546  0.0  0.1  28208  3080 ?        Sl   Oct28   0:02 /home/zhangyihang/.vscode-server/code-f1b07bd25dfad64b0167beb15359ae573aecd2cc command-shell --cli-data-dir /home/zhangyihang/.vscode-server/cli --on-port --require-token 82aa5096458c
-root      8230  0.0  0.0      0     0 ?        S    00:25   0:00 [kworker/1:2]
-root     11827  0.0  0.2 156880  5524 ?        Ss   00:36   0:00 sshd: zhangyihang [priv]
-zhangyi+ 11866  0.0  0.1 157144  2772 ?        S    00:36   0:01 sshd: zhangyihang@notty
-zhangyi+ 11872  0.0  0.0 115416  1616 ?        Ss   00:36   0:00 -bash
-zhangyi+ 11894  0.0  0.0 113552  1932 ?        S    00:36   0:00 bash
-zhangyi+ 11936  0.0  0.0 113284  1336 ?        S    00:36   0:00 sh /home/zhangyihang/.vscode-server/bin/1a5daa3a0231a0fbba4f14db7ec463cf99d7768e/bin/code-server --start-server --host=127.0.0.1 --accept-server-license-terms --enable-remote-auto-shutdown --port=0 --telemetry-level all --connection-token-file /home/zhangyihang/.vscode-server/.1a5daa3a0231a0fbba4f14db7ec463cf99d7768e.token
-zhangyi+ 11948  0.3  3.4 953000 69732 ?        Sl   00:36   0:07 /home/zhangyihang/.vscode-server/bin/1a5daa3a0231a0fbba4f14db7ec463cf99d7768e/node /home/zhangyihang/.vscode-server/bin/1a5daa3a0231a0fbba4f14db7ec463cf99d7768e/out/server-main.js --start-server --host=127.0.0.1 --accept-server-license-terms --enable-remote-auto-shutdown --port=0 --telemetry-level all --connection-token-file /home/zhangyihang/.vscode-server/.1a5daa3a0231a0fbba4f14db7ec463cf99d7768e.token
-zhangyi+ 12004  0.1  1.8 860596 37256 ?        Sl   00:36   0:03 /home/zhangyihang/.vscode-server/bin/1a5daa3a0231a0fbba4f14db7ec463cf99d7768e/node /home/zhangyihang/.vscode-server/bin/1a5daa3a0231a0fbba4f14db7ec463cf99d7768e/out/bootstrap-fork --type=fileWatcher
-zhangyi+ 12025  0.5  4.6 984628 95192 ?        Sl   00:36   0:10 /home/zhangyihang/.vscode-server/bin/1a5daa3a0231a0fbba4f14db7ec463cf99d7768e/node --dns-result-order=ipv4first /home/zhangyihang/.vscode-server/bin/1a5daa3a0231a0fbba4f14db7ec463cf99d7768e/out/bootstrap-fork --type=extensionHost --transformURIs --useHostProxy=false
-zhangyi+ 12039  0.2  2.2 724940 46484 ?        Sl   00:36   0:04 /home/zhangyihang/.vscode-server/bin/1a5daa3a0231a0fbba4f14db7ec463cf99d7768e/node /home/zhangyihang/.vscode-server/bin/1a5daa3a0231a0fbba4f14db7ec463cf99d7768e/out/bootstrap-fork --type=ptyHost --logsPath /home/zhangyihang/.vscode-server/data/logs/20231203T003651
-zhangyi+ 12080  0.0  2.2 627732 46220 ?        Sl   00:36   0:00 /home/zhangyihang/.vscode-server/bin/1a5daa3a0231a0fbba4f14db7ec463cf99d7768e/node /home/zhangyihang/.vscode-server/bin/1a5daa3a0231a0fbba4f14db7ec463cf99d7768e/extensions/css-language-features/server/dist/node/cssServerMain --node-ipc --clientProcessId=12025
-zhangyi+ 12088  0.0  0.1 116964  3544 pts/4    Ss   00:36   0:00 /bin/bash --init-file /home/zhangyihang/.vscode-server/bin/1a5daa3a0231a0fbba4f14db7ec463cf99d7768e/out/vs/workbench/contrib/terminal/browser/media/shellIntegration-bash.sh
-zhangyi+ 16018  0.0  0.1 116964  3532 pts/0    Ss+  00:39   0:00 /bin/bash --init-file /home/zhangyihang/.vscode-server/bin/1a5daa3a0231a0fbba4f14db7ec463cf99d7768e/out/vs/workbench/contrib/terminal/browser/media/shellIntegration-bash.sh
-root     16341  0.0  0.0      0     0 ?        S    00:40   0:00 [kworker/0:0]
-zhangyi+ 17666  0.0  1.1 844944 22652 ?        Ssl  Nov29   0:11 PM2 v5.3.0: God Daemon (/home/zhangyihang/.pm2)
-root     21980  0.0  0.0  97404  1552 ?        Sl   Dec02   0:00 /usr/local/qcloud/stargate/bin/sgagent -d
-root     22667  0.0  0.0      0     0 ?        S    Dec02   0:00 [kworker/u4:0]
-zhangyi+ 22973  2.1  7.5 701476 153588 ?       Sl   00:49   0:26 /home/zhangyihang/.vscode-server/bin/1a5daa3a0231a0fbba4f14db7ec463cf99d7768e/node /home/zhangyihang/.vscode-server/bin/1a5daa3a0231a0fbba4f14db7ec463cf99d7768e/extensions/html-language-features/server/dist/node/htmlServerMain --node-ipc --clientProcessId=12025
-root     23265  0.0  0.0      0     0 ?        S    00:50   0:00 [kworker/0:1]
-root     28615  0.0  0.2  29420  5744 ?        Sl   Nov29   0:58 /usr/local/qcloud/tat_agent/tat_agent
-root     29008  0.0  0.0      0     0 ?        S    Dec01   0:01 [kworker/u4:1]
+root      7716  0.0  0.0      0     0 ?        S    13:51   0:00 [kworker/0:0]
+root      8433  0.0  0.0      0     0 ?        S    13:52   0:00 [kworker/1:1]
+root     11246  0.0  0.0      0     0 ?        S    01:21   0:00 [kworker/u4:2]
+root     13819  0.0  0.0      0     0 ?        S    13:57   0:00 [kworker/1:2]
+zhangyi+ 15597  0.0  0.1 199116  2188 pts/4    Sl+  13:59   0:00 ./httpd 8080
+root     16546  0.0  0.2 113004  4460 ?        Ss   13:59   0:00 sshd: [accepted]
+sshd     16547  0.0  0.1 113004  2236 ?        S    13:59   0:00 sshd: [net]
+zhangyi+ 16553  0.0  0.0 113284  1368 pts/4    S+   13:59   0:00 bash main.sh
+zhangyi+ 16556  0.0  0.0 155452  1876 pts/4    R+   13:59   0:00 ps aux
+zhangyi+ 17666  0.0  1.2 844944 24788 ?        Ssl  Nov29   0:11 PM2 v5.3.0: God Daemon (/home/zhangyihang/.pm2)
+root     27209  0.0  0.0      0     0 ?        S    13:10   0:00 [kworker/1:0]
+root     28615  0.0  0.2  29428  5892 ?        Sl   Nov29   1:06 /usr/local/qcloud/tat_agent/tat_agent
+root     29008  0.0  0.0      0     0 ?        S    Dec01   0:02 [kworker/u4:1]
 zhangyi+ 29419  0.0  0.9 223616 20056 ?        S    Nov07   0:00 python3 -u app.py
-zhangyi+ 29426  0.0  1.7 246772 35340 ?        S    Nov07  28:50 python3 -u app.py
-root     31171  1.2  4.0 1024064 82660 ?       Sl   Nov16 312:11 /usr/local/qcloud/YunJing/YDEyes/YDService
-root     31261  0.0  0.5 1092040 11032 ?       Sl   Nov16   4:52 /bin/sh -c sleep 100
-root     32595  0.0  0.0      0     0 ?        S    01:00   0:00 [kworker/1:1]
+zhangyi+ 29426  0.0  1.7 246516 35096 ?        S    Nov07  29:26 python3 -u app.py
+root     31171  1.2  4.0 1024064 82312 ?       Sl   Nov16 321:48 /usr/local/qcloud/YunJing/YDEyes/YDService
+root     31261  0.0  0.5 1092040 11356 ?       Sl   Nov16   5:01 /bin/sh -c sleep 100
